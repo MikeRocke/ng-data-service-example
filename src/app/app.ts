@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { JokeComponent } from './joke-component/joke-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, JokeComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
