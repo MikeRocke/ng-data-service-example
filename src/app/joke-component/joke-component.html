@@ -1,7 +1,8 @@
 <p>joke-component works!</p>
 
+
 {{this.jokeService.getJoke() | async}}
 
-<form (submit)="updateJoke()">
-    <input id="myJoke" [(ngModel)]="myJoke" name="myJoke" />
+<form (submit)="updateJoke()" [formGroup]="jokeForm">
+    <input id="myJoke" formControlName="joke" name="myJoke" />
 </form>
